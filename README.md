@@ -75,3 +75,7 @@ bpsrc.xml to mycomponent.xml
 ##Empty folders
 
 Some of the folders in the boilerplate contain only an index.html file. This is only needed to ensure the correct installation of an empty folder. If you put anything else in such a folder you may delete the index.html file.
+
+## Try it
+
+At this stage you could make a zip file com_mycomponent and install it to see if it works.

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_bpsrc",
+  "version": "4.0.0",
+  "description": "Joomla CMS",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "com_bpsrc.bpsrc",
+      "type": "script",
+      "uri": "com_bpsrc/bpsrc.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_bpsrc.bpsrc",
+      "type": "style",
+      "uri": "com_bpsrc/bpsrc.css"
+    }
+  ]
+}

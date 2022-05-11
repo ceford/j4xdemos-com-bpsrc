@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="bpsrc" basedir="." default="main">
+    <property file=".project" />
+
+    <!-- Source and Destinations -->
+
+    <property name="package"  value="${phing.project.name}" override="true" />
+    <property name="srcdir" value="${project.basedir}/com_bpsrc" override="true" />
+    <property name="sitedir" value="/Users/username/Sites/j4xdemos"  override="true" />
+    <property name="zipsdir" value="/Users/ceford/git/zips/j4xdemos"  override="true" />
+
+    <!-- Filesets -->
+
+    <fileset dir="${srcdir}/admin" id="adminfiles">
+        <include name="**" />
+    </fileset>
+    <fileset dir="${srcdir}/media" id="mediafiles">
+        <include name="**" />
+    </fileset>
+	<fileset dir="${srcdir}/site" id="sitefiles">
+        <include name="**" />
+    </fileset>
+    <fileset dir="${srcdir}" id="allfiles">
+        <include name="**" />
+    </fileset>
+
+    <!-- Targets -->
+
+    <target name="main" description="main target">
+        <!-- 
+        Uncomment this section to build a derived component
+        <copy todir="${sitedir}/administrator/components/com_bpsrc">
+            <fileset refid="adminfiles" />
+        </copy>
+        <copy todir="${sitedir}/media/com_bpsrc">
+            <fileset refid="mediafiles" />
+        </copy>
+        <copy todir="${sitedir}/components/com_bpsrc">
+            <fileset refid="sitefiles" />
+        </copy>
+         -->
+        <zip destfile="${zipsdir}/com_bpsrc.zip">
+            <fileset refid="allfiles" />
+        </zip>
+    </target>
+</project>

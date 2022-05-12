@@ -46,6 +46,22 @@ MYCOMPONENT
 
 Typically used for string keys.
 
+## ini File Changes
+
+It is probably best to do these by opening the individual files before renaming them.
+
+admin/language/en-GB/com_bpsrc.ini
+
+COM_BPSRC_DEFAULT_TITLE="Boilerplate Source"
+
+**change to ==>**
+
+COM_BPSRC_DEFAULT_TITLE="Component Name"
+
+admin/language/en-GB/com_bpsrc.sys.ini
+
+Change all of the text strings in this file to suit your component.
+
 ## File Name Changes
 
 admin/help/en-GB/bpsrc.html to mycomponent.html

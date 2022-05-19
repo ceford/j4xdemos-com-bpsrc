@@ -6,5 +6,125 @@
 </head>
 <body>
 
+<h1>Joomla Component Boilerplate Source</h1>
+
+<p>com_bpsrc can be installed as a Joomla component and it will display Hello World in both Administrator and Site pages. However that is not its purpose. When unpacked it provides a component boilerplate source structure as a basis for building something more substantial.
+</p>
+<p>Unpack it, make the changes indicated below and then, optionally, use it in conjunction with an IDE and place it in a local git repo.
+</p>
+<p>For each of the changes, substitute mycomponent with whatever name you are using for your new component. And pay attention to Case, case or CASE.
+</p>
+
+<h2>File Content Changes</h2>
+
+<p>There are a lot of files that need to be customised! Use your text edit tool to globally change the following in all files:
+</p>
+
+<p>(C) 2022 John Doe change to ==> (C) Year Your Name
+</p>
+
+<p>GNU General Public License version 2 or later; see LICENSE.txt change to ==> GNU General Public License version 3 or later; see LICENSE.txt
+
+must be GPL for JED compatibility
+</p>
+
+<p>Bpsrcroot change to ==> Your own or company preferred namespace prefix, declared in bpsrc.xml and used in all namespaced files.
+</p>
+
+<p>The Joomla namespace root is Joomla. Use something else!
+</p>
+
+<p>Change the following using case sensitive searches
+</p>
+
+<p>Bpsrc change to ==> Mycomponent
+</p>
+
+<p>The equivalent name of your component with the first letter capitalised.
+</p>
+
+<p>bpsrc change to ==> mycomponent
+</p>
+
+<p>The equivalent name of your component with the first letter NOT capitalised.
+</p>
+
+<p>BPSRC change to ==> MYCOMPONENT
+</p>
+
+<p>Typically used for string keys.
+</p>
+
+<h2>ini File Changes</h2>
+
+<p>It is probably best to do these by opening the individual files before renaming them.
+</p>
+
+<p>admin/language/en-GB/com_bpsrc.ini
+</p>
+
+<p>COM_BPSRC_DEFAULT_TITLE="Boilerplate Source"
+</p>
+
+<p>change to ==>
+</p>
+
+<p>COM_BPSRC_DEFAULT_TITLE="Component Name"
+</p>
+
+<p>admin/language/en-GB/com_bpsrc.sys.ini
+</p>
+
+<p>Change all of the text strings in this file to suit your component.
+</p>
+
+<h2>File Name Changes</h2>
+
+<p>admin/help/en-GB/bpsrc.html to mycomponent.html
+</p>
+
+<p>admin/language/en-GB/com_bpsrc.ini to com_mycomponent.ini
+</p>
+
+<p>admin/language/en-GB/com_bpsrc.sys.ini to com_mycomponent.sys.ini
+</p>
+
+<p>admin/src/Extension/BpsrcComponent.php to MycomponentComponent.php and change the class name to match.
+</p>
+
+<p>admin/src/Model/BpsrcModel.php to MycomponentModel.php and change the class name to match.
+</p>
+
+<p>admin/src/View/Bpsrc to Mycomponent
+</p>
+
+<p>admin/tmpl/bpsrc to mycomponent
+</p>
+
+<p>site/language/en-GB/com_bpsrc.ini to com_mycomponent.ini
+</p>
+
+<p>site/src/Model/BpsrcModel.php to MycomponentModel.php and change the class name to match.
+</p>
+
+<p>site/src/View/Bpsrc to Mycomponent
+</p>
+
+<p>site/tmpl/bpsrc to mycomponent
+</p>
+
+<p>bpsrc.xml to mycomponent.xml
+</p>
+
+<h2>Empty folders</h2>
+
+<p>Some of the folders in the boilerplate contain only an index.html file. This is only needed to ensure the correct installation of an empty folder. If you put anything else in such a folder you may delete the index.html file.
+</p>
+
+<h2>Try it</h2>
+
+<p>At this stage you could make a zip file com_mycomponent and install it to see if it works.
+</p>
+
 </body>
 </html>
